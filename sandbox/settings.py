@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'system',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # 设置代码目录
 sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
+
+
+# 设置自定义认证模型
+AUTH_USER_MODEL = 'system.UserProfile'
