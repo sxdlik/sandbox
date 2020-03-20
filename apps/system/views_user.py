@@ -18,7 +18,7 @@ class LoginView(View):
     """ 登录视图 """
     def get(self, request):
         if not request.user.is_authenticated:
-            return render(request, 'system/usres/login.html')
+            return render(request, 'system/users/login.html')
         else:
             return HttpResponseRedirect('/')
 
