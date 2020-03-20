@@ -134,3 +134,7 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 
 # 设置自定义认证模型
 AUTH_USER_MODEL = 'system.UserProfile'
+
+
+# 设置默认登录地址
+LOGIN_URL = '/login/'
